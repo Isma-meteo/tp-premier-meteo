@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>TP metéo HTML</title>
+
+    <label for="ville-select">Choose city:</label>
+
+<select onchange=showCity() name="villes" id="villes-select">
+    <option value="">--Please choose an option--</option>
+    <option value="Lyon">Lyon</option>
+    <option value="Paris">Paris</option>
+    <option value="Rouen">Rouen</option>
+  
+</select>
+
+
+       <style>
+h1{
+    background-color: rgb(43, 31, 31);
+    color: honeydew;
+    text-align: center;
+}
+.couleurBack{
+background-color: rgb(235, 208, 208);
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap;
+    justify-content:space-between;
+    
+    }
+
+    .couleurBack {
+  width: 450px;
+  margin: auto;
+  padding-left: 15px;
+}
+       </style>
+       <script>
+
+let villeCourante = "Lyon"
+function showCity() { console.log(villeCourante); }
+
+
+       </script>
+
+</head>
+
+<body>
+
+    
+    
+    <h1>Mini applicaiton méteo</h1>
+    <div class="flex">
+    <div class="couleurBack" id="Lyon">
+
+        <h2>Lyon</h2>
+	           <p> 15 C°, heure : 10:25 H </p>
+		             <img src=" file:///C:/Users/ismai/Downloads/noun_Cloud_2449772.svg" alt="Ville Lyon" width="100" height="50" />
+
+                    </div>
+                   
+                    <div class="couleurBack" id="Paris">
+
+        <h2>Paris</h2>
+	            <p> 5 C°, heure : 10:25 H  </p>
+		                <img src=" file:///C:/Users/ismai/Downloads/noun_rainy_854528.svg" alt="Ville Paris" width="100" height="50" />
+
+                    </div>
+                    <div class="couleurBack" id="Rouen">
+
+                        <h2>Rouen</h2>
+	            <p> -10 C°, heure : 10:25 H  </p>
+		                <img src="file:///C:/Users/ismai/Downloads/noun_snowing_854534.svg" alt="Ville Rouen" width="100" height="50" />
+
+                    </div>
+                </div>
+
+    <footer> SELLAM Ismail</footer>
+
+</body>
+</html>
